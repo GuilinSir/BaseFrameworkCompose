@@ -1,5 +1,10 @@
 pluginManagement {
     repositories {
+        // 添加阿里云镜像
+        maven { url = uri("https://maven.aliyun.com/repository/google") }
+        maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven { url = uri("https://maven.aliyun.com/repository/central") }
+
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
@@ -11,9 +16,14 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        // 添加阿里云镜像
+        maven { url = uri("https://maven.aliyun.com/repository/google") }
+        maven { url = uri("https://maven.aliyun.com/repository/central") }
+
         google()
         mavenCentral()
     }
@@ -21,4 +31,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "BaseFrameworkCompose"
 include(":app")
- 

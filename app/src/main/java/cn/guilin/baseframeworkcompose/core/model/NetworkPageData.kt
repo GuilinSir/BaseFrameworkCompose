@@ -1,4 +1,4 @@
-package cn.guilin.baseframeworkcompose.model
+package cn.guilin.baseframeworkcompose.core.model
 
 data class NetworkPageData<T>(
     /**

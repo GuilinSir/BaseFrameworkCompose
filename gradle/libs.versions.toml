@@ -19,6 +19,10 @@ kotlinxSerializationJson = "1.8.0"
 okhttp = "4.12.0"
 retrofit = "2.11.0"
 retrofit2KotlinxSerializationConverter = "1.0.0"
+# 网络请求框架日志框架
+loggingInterceptor = "4.12.0"
+# 日志框架
+timber = "5.0.1"
 
 
 # 依赖注入相关
@@ -53,9 +57,13 @@ okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
 
 # retrofit
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+# 网络请求框架日志框架
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
 
 # 让Retrofit支持Kotlinx Serialization
 retrofit2-kotlinx-serialization-converter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofit2KotlinxSerializationConverter" }
+# 日志框架
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 
 # 依赖注入相关
 ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
