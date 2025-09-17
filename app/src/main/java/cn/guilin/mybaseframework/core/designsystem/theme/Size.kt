@@ -1,4 +1,4 @@
-package cn.guilin.mybaseframework.ui.theme
+package cn.guilin.mybaseframework.core.designsystem.theme
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height

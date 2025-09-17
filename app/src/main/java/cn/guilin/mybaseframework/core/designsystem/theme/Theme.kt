@@ -1,4 +1,4 @@
-package cn.guilin.mybaseframework.ui.theme
+package cn.guilin.mybaseframework.core.designsystem.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
