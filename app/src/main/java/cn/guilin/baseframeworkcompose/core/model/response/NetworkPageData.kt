@@ -1,5 +1,8 @@
-package cn.guilin.baseframeworkcompose.core.model
+package cn.guilin.baseframeworkcompose.core.model.response
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class NetworkPageData<T>(
     /**
      * 列表

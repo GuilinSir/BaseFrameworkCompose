@@ -43,7 +43,7 @@ android {
             // 开发环境配置
 
             // 本地地址 - 模拟器访问方式
-            buildConfigField("String", "BASE_URL", "\"https://api.coolmall.com/prod/app/\"")
+            buildConfigField("String", "BASE_URL", "\"https://mall.dusksnow.top/app/\"")
             // 真机通过局域网IP访问方式
             // buildConfigField("String", "BASE_URL", "\"http://192.168.x.x:9900/dev/app/\"")
             // 直接使用localhost（仅适用于模拟器内网应用运行的特殊情况）
@@ -57,7 +57,7 @@ android {
             // 生产环境配置
 
             // 生产环境地址
-            buildConfigField("String", "BASE_URL", "\"https://api.coolmall.com/prod/app/\"")
+            buildConfigField("String", "BASE_URL", "\"https://mall.dusksnow.top/app/\"")
             buildConfigField("Boolean", "DEBUG", "false")
         }
     }

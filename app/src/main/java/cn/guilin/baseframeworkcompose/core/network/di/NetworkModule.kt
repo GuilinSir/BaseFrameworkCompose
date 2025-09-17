@@ -1,5 +1,6 @@
-package cn.guilin.baseframeworkcompose.core.network.datasource.base
+package cn.guilin.baseframeworkcompose.core.network.di
 
+import cn.guilin.baseframeworkcompose.BuildConfig
 import cn.guilin.baseframeworkcompose.core.network.interceptor.AuthInterceptor
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import dagger.Module
@@ -17,7 +18,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
-    private val BASE_URL = "BuildConfig.BASE_URL"
+    private val BASE_URL = BuildConfig.BASE_URL
 
     // 配置Json序列化
     @Provides

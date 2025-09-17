@@ -1,6 +1,6 @@
 package cn.guilin.baseframeworkcompose.core.result
 
-import cn.guilin.baseframeworkcompose.core.model.NetworkResponse
+import cn.guilin.baseframeworkcompose.core.model.response.NetworkResponse
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.map
