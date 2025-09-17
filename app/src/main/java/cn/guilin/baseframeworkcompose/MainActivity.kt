@@ -15,6 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import cn.guilin.baseframeworkcompose.core.designsystem.theme.MyBaseFrameworkTheme
+import cn.guilin.baseframeworkcompose.navigation.AppNavHost
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -26,17 +27,18 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MyBaseFrameworkTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-//                    Greeting(
-//                        name = "Android",
-//                        modifier = Modifier.padding(innerPadding)
-//                    )
-                    Column (modifier = Modifier.padding(innerPadding)){
-                        Button(onClick = viewModel::getGoods) {
-                            Text("获取商品")
-                        }
-                    }
-                }
+//                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+////                    Greeting(
+////                        name = "Android",
+////                        modifier = Modifier.padding(innerPadding)
+////                    )
+//                    Column (modifier = Modifier.padding(innerPadding)){
+//                        Button(onClick = viewModel::getGoods) {
+//                            Text("获取商品")
+//                        }
+//                    }
+//                }
+                AppNavHost()
             }
         }
     }
