@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MyBaseFramework"
+rootProject.name = "BaseFrameworkCompose"
 include(":app")
  

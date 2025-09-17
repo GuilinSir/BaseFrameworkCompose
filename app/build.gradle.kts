@@ -12,11 +12,11 @@ plugins {
 }
 
 android {
-    namespace = "cn.guilin.mybaseframework"
+    namespace = "cn.guilin.baseframeworkcompose"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "cn.guilin.mybaseframework"
+        applicationId = "cn.guilin.baseframeworkcompose"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

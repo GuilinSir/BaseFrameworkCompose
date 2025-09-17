@@ -1,4 +1,4 @@
-package cn.guilin.mybaseframework
+package cn.guilin.baseframeworkcompose
 
 import org.junit.Test
 

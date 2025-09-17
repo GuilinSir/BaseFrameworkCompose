@@ -1,4 +1,4 @@
-package cn.guilin.mybaseframework.core.designsystem.theme
+package cn.guilin.baseframeworkcompose.core.designsystem.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.runtime.Composable
