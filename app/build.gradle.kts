@@ -77,6 +77,10 @@ android {
 }
 
 dependencies {
+    implementation(project(":navigation"))
+    implementation(project(":core:designsystem"))
+    implementation(project(":feature:main"))
+    implementation(project(":feature:goods"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -93,28 +97,9 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-
     // 导航
     // https://mvnrepository.com/artifact/androidx.navigation/navigation-compose
     implementation(libs.navigation.compose)
-
-    // kotlin序列化
-    // https://kotlinlang.org/docs/serialization.html
-    implementation(libs.kotlinx.serialization.json)
-
-    // okhttp 网络框架
-    // https://github.com/square/okhttp
-    implementation(libs.okhttp)
-
-    // 类型安全网络框架
-    // https://github.com/square/retrofit
-    implementation(libs.retrofit)
-
-    // 让Retrofit支持Kotlinx Serialization
-    implementation(libs.retrofit2.kotlinx.serialization.converter)
-
-    // 网络请求框架日志框架
-    implementation(libs.logging.interceptor)
 
     //日志框架
     //https://github.com/JakeWharton/timber
@@ -130,8 +115,5 @@ dependencies {
     //endregion
 
     compileOnly(libs.ksp.gradlePlugin)
-    
-    // 图片加载框架
-    // https://github.com/coil-kt/coil
-    implementation(libs.coil.compose)
+
 }

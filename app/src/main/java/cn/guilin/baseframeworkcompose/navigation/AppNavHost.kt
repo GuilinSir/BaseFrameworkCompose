@@ -1,6 +1,5 @@
 package cn.guilin.baseframeworkcompose.navigation
 
-import MAIN_ROUTE
 import androidx.compose.animation.AnimatedContentTransitionScope
 import androidx.compose.animation.core.tween
 import androidx.compose.runtime.Composable
@@ -8,11 +7,12 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
-import cn.guilin.baseframeworkcompose.feature.goodsdetail.navigation.goodsDetailScreen
-import cn.guilin.baseframeworkcompose.navigation.AppNavigator
-import cn.guilin.baseframeworkcompose.navigation.handleNavigationEvent
+import cn.guilin.feature.goods.navigation.goodsGraph
+import cn.guilin.main.navigation.MAIN_ROUTE
+import cn.guilin.main.navigation.mainGraph
+import cn.guilin.navigation.AppNavigator
+import cn.guilin.navigation.handleNavigationEvent
 import kotlinx.coroutines.flow.collectLatest
-import mainScreen
 
 /**
  * 应用导航宿主
@@ -65,10 +65,8 @@ fun AppNavHost(
             )
         }
     ) {
-        // 主页面路由
-        mainScreen()
-
-        // 商品详情页面路由
-        goodsDetailScreen()
+        // 只调用模块级Graph函数，大大减少了冲突可能性
+        mainGraph(navController)
+        goodsGraph(navController)
     }
 }

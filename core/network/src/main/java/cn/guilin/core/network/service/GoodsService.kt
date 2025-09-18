@@ -1,8 +1,5 @@
 package cn.guilin.core.network.service
 
-import cn.guilin.core.model.Goods
-import cn.guilin.core.model.response.NetworkPageData
-import cn.guilin.core.model.response.NetworkResponse
 import retrofit2.http.Body
 import retrofit2.http.POST
 import retrofit2.http.Query

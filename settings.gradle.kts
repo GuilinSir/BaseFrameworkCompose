@@ -41,7 +41,7 @@ include(":core:data")
 include(":core:common")
 // feature 模块
 // 首页
-include(":feature:mian")
+include(":feature:main")
 // 用户认证
 include(":feature:auth")
 // 公共
@@ -56,3 +56,4 @@ include(":feature:market")
 include(":feature:order")
 // 用户
 include(":feature:user")
+include(":navigation")

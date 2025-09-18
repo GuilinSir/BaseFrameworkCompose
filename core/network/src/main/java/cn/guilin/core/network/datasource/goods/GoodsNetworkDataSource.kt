@@ -1,8 +1,5 @@
 package cn.guilin.core.network.datasource.goods
 
-import cn.guilin.core.model.Goods
-import cn.guilin.core.model.response.NetworkPageData
-import cn.guilin.core.model.response.NetworkResponse
 import cn.guilin.core.network.datasource.base.NetworkDataSource
 
 /**
