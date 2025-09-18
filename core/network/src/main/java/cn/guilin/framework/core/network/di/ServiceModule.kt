@@ -1,6 +1,6 @@
 package cn.guilin.framework.core.network.di
 
-import cn.guilin.core.network.service.GoodsService
+import cn.guilin.framework.core.network.service.GoodsService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

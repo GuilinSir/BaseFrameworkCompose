@@ -2,8 +2,8 @@ package cn.guilin.framework.main.model
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import cn.guilin.feature.main.R
-import cn.guilin.navigation.routes.MainRoutes
+import cn.guilin.framework.feature.main.R
+import cn.guilin.framework.navigation.routes.MainRoutes
 
 enum class TopLevelDestination(
     @DrawableRes val selectedIconId: Int,

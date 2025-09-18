@@ -26,8 +26,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import cn.guilin.feature.goods.viewmodel.GoodsDetailUiState
-import cn.guilin.feature.goods.viewmodel.GoodsDetailViewModel
+import cn.guilin.framework.feature.goods.viewmodel.GoodsDetailUiState
+import cn.guilin.framework.feature.goods.viewmodel.GoodsDetailViewModel
 
 /**
  * 商品详情页面路由入口

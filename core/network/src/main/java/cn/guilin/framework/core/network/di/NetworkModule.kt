@@ -1,7 +1,7 @@
 package cn.guilin.framework.core.network.di
 
 import cn.guilin.framework.BuildConfig
-import cn.guilin.core.network.interceptor.AuthInterceptor
+import cn.guilin.framework.core.network.interceptor.AuthInterceptor
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import dagger.Module
 import dagger.Provides

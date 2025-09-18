@@ -7,11 +7,9 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
-import cn.guilin.feature.goods.navigation.goodsGraph
-import cn.guilin.main.navigation.MAIN_ROUTE
-import cn.guilin.main.navigation.mainGraph
-import cn.guilin.navigation.AppNavigator
-import cn.guilin.navigation.handleNavigationEvent
+import cn.guilin.framework.feature.goods.navigation.goodsGraph
+import cn.guilin.framework.main.navigation.MAIN_ROUTE
+import cn.guilin.framework.main.navigation.mainGraph
 import kotlinx.coroutines.flow.collectLatest
 
 /**

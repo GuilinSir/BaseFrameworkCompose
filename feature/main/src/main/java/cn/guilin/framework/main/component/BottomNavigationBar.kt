@@ -25,9 +25,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import cn.guilin.core.designsystem.theme.SpaceHorizontalSmall
-import cn.guilin.core.designsystem.theme.SpaceVerticalXSmall
-import cn.guilin.main.model.TopLevelDestination
+import cn.guilin.framework.core.designsystem.theme.SpaceHorizontalSmall
+import cn.guilin.framework.core.designsystem.theme.SpaceVerticalXSmall
+import cn.guilin.framework.main.model.TopLevelDestination
 
 /**
  * 底部导航栏

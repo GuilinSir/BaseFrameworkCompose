@@ -1,4 +1,4 @@
-package com.joker.coolmall.feature.main.view
+package cn.guilin.framework.main.view
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.layout.Arrangement
@@ -47,17 +47,17 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import cn.guilin.core.designsystem.theme.ColorDanger
-import cn.guilin.core.designsystem.theme.ShapeMedium
-import cn.guilin.core.designsystem.theme.SpaceHorizontalLarge
-import cn.guilin.core.designsystem.theme.SpaceHorizontalSmall
-import cn.guilin.core.designsystem.theme.SpaceVerticalLarge
-import cn.guilin.core.designsystem.theme.SpaceVerticalSmall
-import cn.guilin.core.designsystem.theme.SpaceVerticalXSmall
-import cn.guilin.core.ui.component.swiper.WeSwiper
+import cn.guilin.framework.core.designsystem.theme.ColorDanger
+import cn.guilin.framework.core.designsystem.theme.ShapeMedium
+import cn.guilin.framework.core.designsystem.theme.SpaceHorizontalLarge
+import cn.guilin.framework.core.designsystem.theme.SpaceHorizontalSmall
+import cn.guilin.framework.core.designsystem.theme.SpaceVerticalLarge
+import cn.guilin.framework.core.designsystem.theme.SpaceVerticalSmall
+import cn.guilin.framework.core.designsystem.theme.SpaceVerticalXSmall
+import cn.guilin.framework.core.ui.component.swiper.WeSwiper
+import cn.guilin.framework.feature.main.R
+import cn.guilin.framework.main.viewmodel.HomeViewModel
 import coil.compose.AsyncImage
-import cn.guilin.main.viewmodel.HomeViewModel
-import cn.guilin.feature.main.R
 
 /**
  * 首页路由入口

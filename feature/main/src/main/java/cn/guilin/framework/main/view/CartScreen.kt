@@ -1,4 +1,4 @@
-package com.joker.coolmall.feature.main.view
+package cn.guilin.framework.main.view
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
-import cn.guilin.feature.main.R
+import cn.guilin.framework.feature.main.R
 
 @Composable
 internal fun CartRoute() {

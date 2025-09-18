@@ -9,8 +9,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import cn.guilin.framework.core.designsystem.theme.MyBaseFrameworkTheme
 import cn.guilin.framework.navigation.AppNavHost
-import cn.guilin.core.designsystem.theme.MyBaseFrameworkTheme
+import cn.guilin.framework.navigation.AppNavigator
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -18,7 +19,7 @@ import javax.inject.Inject
 class MainActivity : ComponentActivity() {
     private val viewModel: MainActivityViewModel by viewModels()
     @Inject
-    lateinit var navigator: cn.guilin.navigation.AppNavigator
+    lateinit var navigator: AppNavigator
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

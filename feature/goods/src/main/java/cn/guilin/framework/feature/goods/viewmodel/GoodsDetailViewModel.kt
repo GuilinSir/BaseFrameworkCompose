@@ -3,8 +3,8 @@ package cn.guilin.framework.feature.goods.viewmodel
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import cn.guilin.feature.goods.navigation.GoodsDetailRoutes
-import cn.guilin.navigation.AppNavigator
+import cn.guilin.framework.feature.goods.navigation.GoodsDetailRoutes
+import cn.guilin.framework.navigation.AppNavigator
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow

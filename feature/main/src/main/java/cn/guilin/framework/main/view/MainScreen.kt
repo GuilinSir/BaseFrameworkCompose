@@ -1,4 +1,4 @@
-package com.joker.coolmall.feature.main.view
+package cn.guilin.framework.main.view
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,8 +13,8 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import cn.guilin.main.component.BottomNavigationBar
-import cn.guilin.main.model.TopLevelDestination
+import cn.guilin.framework.main.component.BottomNavigationBar
+import cn.guilin.framework.main.model.TopLevelDestination
 import kotlinx.coroutines.launch
 
 /**

@@ -1,6 +1,6 @@
 package cn.guilin.framework.core.network.di
 
-import cn.guilin.core.network.datasource.goods.GoodsNetworkDataSource
+import cn.guilin.framework.core.network.datasource.goods.GoodsNetworkDataSource
 import cn.guilin.framework.core.network.datasource.goods.GoodsNetworkDataSourceImpl
 import dagger.Binds
 import dagger.Module

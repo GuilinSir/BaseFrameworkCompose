@@ -4,8 +4,8 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavType
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import cn.guilin.feature.goods.view.GoodsDetailRoute
-import cn.guilin.navigation.routes.GoodsRoutes
+import cn.guilin.framework.feature.goods.view.GoodsDetailRoute
+import cn.guilin.framework.navigation.routes.GoodsRoutes
 
 /**
  * 商品详情页面路由常量

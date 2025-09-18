@@ -3,7 +3,7 @@ package cn.guilin.framework.main.navigation
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
-import com.joker.coolmall.feature.main.view.MainRoute
+import cn.guilin.framework.main.view.MainRoute
 
 /**
  * 主页面路由
