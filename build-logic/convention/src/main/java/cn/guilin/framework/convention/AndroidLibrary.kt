@@ -117,6 +117,21 @@ internal fun Project.configureAndroid(
             sourceCompatibility = JavaVersion.VERSION_11
             targetCompatibility = JavaVersion.VERSION_11
         }
+
+
+        flavorDimensions += listOf("env")
+        productFlavors {
+            create("dev") {
+                dimension = "env"
+                buildConfigField("String", "BASE_URL", "\"https://mall.dusksnow.top/app/\"")
+                buildConfigField("Boolean", "DEBUG", "true")
+            }
+            create("prod") {
+                dimension = "env"
+                buildConfigField("String", "BASE_URL", "\"https://mall.dusksnow.top/app/\"")
+                buildConfigField("Boolean", "DEBUG", "false")
+            }
+        }
     }
 }
 /**
