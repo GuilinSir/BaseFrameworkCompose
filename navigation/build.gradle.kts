@@ -5,7 +5,11 @@ plugins {
     alias(libs.plugins.hilt)
 }
 
-
+android {
+    buildFeatures {
+        buildConfig = true
+    }
+}
 dependencies {
 
     // 导航

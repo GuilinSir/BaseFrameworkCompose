@@ -5,7 +5,7 @@ import kotlinx.serialization.Serializable
  * 分页模型
  */
 @Serializable
-data class NetworkPageMeta(
+data class BasePageMeta(
     /**
      * 总条数
      */

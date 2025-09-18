@@ -1,5 +1,6 @@
 package cn.guilin.framework.core.network.di
 
+import cn.guilin.framework.core.network.service.BannerService
 import cn.guilin.framework.core.network.service.GoodsService
 import dagger.Module
 import dagger.Provides
@@ -16,5 +17,11 @@ object ServiceModule {
     //当需要 GoodsService 实例时，Hilt 会自动调用此方法
     fun provideGoodsService(retrofit: Retrofit): GoodsService {
         return retrofit.create(GoodsService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideBannerService(retrofit: Retrofit): BannerService {
+        return retrofit.create(BannerService::class.java)
     }
 }

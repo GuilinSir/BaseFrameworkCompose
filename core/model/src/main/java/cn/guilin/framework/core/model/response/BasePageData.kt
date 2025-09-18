@@ -3,7 +3,7 @@ package cn.guilin.framework.core.model.response
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class NetworkPageData<T>(
+data class BasePageData<T>(
     /**
      * 列表
      */
@@ -12,5 +12,5 @@ data class NetworkPageData<T>(
     /**
      * 分页数据
      */
-    val pagination: NetworkPageMeta? = null,
+    val pagination: BasePageMeta? = null,
 )

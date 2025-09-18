@@ -13,9 +13,10 @@ class LoggingInterceptor @Inject constructor() {
     
     @Inject
     fun init(): HttpLoggingInterceptor {
-        val loggingInterceptor = HttpLoggingInterceptor { message ->
-            Timber.tag("OkHttp").d(message)
-        }
+//        val loggingInterceptor = HttpLoggingInterceptor { message ->
+//            Timber.tag("OkHttp").d(message)
+//        }
+        val loggingInterceptor = HttpLoggingInterceptor()
         loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
         return loggingInterceptor
     }

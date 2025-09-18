@@ -1,11 +1,14 @@
 package cn.guilin.framework.core.network.di
 
-import cn.guilin.framework.BuildConfig
+import android.content.Context
+import cn.guilin.framework.core.network.BuildConfig
 import cn.guilin.framework.core.network.interceptor.AuthInterceptor
+import com.chuckerteam.chucker.api.ChuckerInterceptor
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
@@ -40,7 +43,8 @@ object NetworkModule {
     @Singleton
     fun provideOkhttpClient(
         authInterceptor: AuthInterceptor,
-        loggingInterceptor: HttpLoggingInterceptor
+        loggingInterceptor: HttpLoggingInterceptor,
+        @ApplicationContext context: Context
     ): OkHttpClient {
         return OkHttpClient.Builder()
             .connectTimeout(10, TimeUnit.SECONDS) // 连接超时时间
@@ -48,6 +52,11 @@ object NetworkModule {
             .readTimeout(10, TimeUnit.SECONDS) // 读超时时间
             .addInterceptor(authInterceptor)
             .addInterceptor(loggingInterceptor)
+            .apply {
+                if (BuildConfig.DEBUG) {
+                    addInterceptor(ChuckerInterceptor.Builder(context).build())
+                }
+            }
             .build()
     }
 

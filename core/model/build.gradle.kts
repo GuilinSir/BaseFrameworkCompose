@@ -1,5 +1,6 @@
 plugins {
     id("cn.guilin.framework.convention.android.library")
+    alias(libs.plugins.kotlin.serialization)
 }
 android {
     //Android Gradle插件会自动生成 BuildConfig 类

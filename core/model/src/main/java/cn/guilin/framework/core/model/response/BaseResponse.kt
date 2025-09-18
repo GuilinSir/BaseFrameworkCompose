@@ -3,7 +3,7 @@ package cn.guilin.framework.core.model.response
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class NetworkResponse<T>(
+data class BaseResponse<T>(
     /**
      * 真实数据
      * 类型是泛型
