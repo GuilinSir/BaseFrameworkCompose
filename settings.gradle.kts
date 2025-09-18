@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         // 添加阿里云镜像
         maven { url = uri("https://maven.aliyun.com/repository/google") }

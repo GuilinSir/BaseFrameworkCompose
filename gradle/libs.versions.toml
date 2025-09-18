@@ -5,7 +5,7 @@ versionCode = "1"
 # 版本号
 versionName = "1.0.0"
 # 名称
-namespace = "cn.guilin.baseframeworkcompose"
+namespace = "cn.guilin.framework"
 # sdk 配置
 compileSdk = "35"
 # 最低支持的 sdk 版本
@@ -89,6 +89,11 @@ coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose"
 # 模块化
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+# 构建工具相关库
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
