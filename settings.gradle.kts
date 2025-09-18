@@ -1,5 +1,8 @@
+// Gradle插件管理配置
 pluginManagement {
+    // 包含build-logic目录作为构建逻辑模块
     includeBuild("build-logic")
+    // Google的Maven仓库，用于Android相关依赖
     repositories {
         // 添加阿里云镜像
         maven { url = uri("https://maven.aliyun.com/repository/google") }
@@ -8,13 +11,14 @@ pluginManagement {
 
         google {
             content {
+                // 通过正则表达式指定允许从Google仓库下载的包
                 includeGroupByRegex("com\\.android.*")
                 includeGroupByRegex("com\\.google.*")
                 includeGroupByRegex("androidx.*")
             }
         }
-        mavenCentral()
-        gradlePluginPortal()
+        mavenCentral() // Maven中央仓库
+        gradlePluginPortal() // Gradle插件门户
     }
 }
 
@@ -29,11 +33,11 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
+// 设置根项目名称
 rootProject.name = "BaseFrameworkCompose"
-
+// 包含主应用模块
 include(":app")
-// core 模块
+// 核心模块
 include(":core:ui")
 include(":core:model")
 include(":core:network")
@@ -57,4 +61,5 @@ include(":feature:market")
 include(":feature:order")
 // 用户
 include(":feature:user")
+// 导航模块
 include(":navigation")
