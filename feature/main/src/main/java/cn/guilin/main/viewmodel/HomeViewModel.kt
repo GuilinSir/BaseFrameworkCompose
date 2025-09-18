@@ -3,6 +3,7 @@ package cn.guilin.main.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cn.guilin.navigation.AppNavigator
+import cn.guilin.navigation.routes.GoodsRoutes
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -20,7 +21,6 @@ class HomeViewModel @Inject constructor(
      */
     fun navigateToGoodsDetail(goodsId: String) {
         viewModelScope.launch {
-            navigator.navigateTo("goods_detail/$goodsId")
-        }
+            navigator.navigateTo("${GoodsRoutes.DETAIL}/$goodsId")        }
     }
 }
