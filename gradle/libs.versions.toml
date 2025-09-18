@@ -21,13 +21,10 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.9.3"
 composeBom = "2024.12.01"
-
 # 导航
 navigationCompose = "2.8.9"
-
 # 序列化
 kotlinxSerializationJson = "1.8.0"
-
 # 网络请求
 okhttp = "4.12.0"
 retrofit = "2.11.0"
@@ -36,14 +33,15 @@ retrofit2KotlinxSerializationConverter = "1.0.0"
 loggingInterceptor = "4.12.0"
 # 日志框架
 timber = "5.0.1"
-
-
 # 依赖注入相关
 hilt = "2.54"
 hiltNavigationCompose = "1.2.0"
 ksp = "2.1.0-1.0.29"
 # 图片加载
 coilCompose = "2.6.0"
+# 模块化
+appcompat = "1.6.1"
+material = "1.10.0"
 
 
 [libraries]
@@ -88,11 +86,17 @@ hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", vers
 hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 # 图片加载框架
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+# 模块化
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-
 # 依赖注入相关
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+# 序列化
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+# 模块化
+android-library = { id = "com.android.library", version.ref = "agp" }

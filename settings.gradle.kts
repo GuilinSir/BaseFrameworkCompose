@@ -31,3 +31,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "BaseFrameworkCompose"
 include(":app")
+include(":core:ui")
+include(":core:model")
+include(":core:network")
+include(":core:designsystem")
+include(":core:data")
+include(":core:common")
