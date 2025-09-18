@@ -1,4 +1,17 @@
 [versions]
+# 项目公共配置
+# 构建版本
+versionCode = "1"
+# 版本号
+versionName = "1.0.0"
+# 名称
+namespace = "cn.guilin.baseframeworkcompose"
+# sdk 配置
+compileSdk = "35"
+# 最低支持的 sdk 版本
+minSdk = "26"
+targetSdk = "35"
+
 agp = "8.7.3"
 kotlin = "2.1.0"
 coreKtx = "1.15.0"
